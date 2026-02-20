@@ -7,13 +7,13 @@
   <meta name="description" content="Cybersecurity Analyst, Ethical Hacker & Penetration Tester based in Nairobi.">
   <meta name="author" content="Sakina Opanga" />
 
-  <!-- Styling -->
   <style>
     :root {
       --cream: #fdf6e3;
-      --brown: #4e342e;
+      --brown: #3e2723;
       --light-brown: #6d4c41;
       --accent: #a1887f;
+      --glow: #ffcc80;
     }
 
     body {
@@ -26,17 +26,18 @@
     }
 
     header {
-      background: var(--brown);
+      background: linear-gradient(135deg, var(--brown), var(--light-brown));
       padding: 3rem;
       text-align: center;
       color: var(--cream);
       animation: fadeInDown 1.5s ease;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
 
     header h1 {
       margin: 0;
       font-size: 3rem;
-      animation: slideIn 1.5s ease;
+      animation: glowText 2s infinite alternate;
     }
 
     header p {
@@ -55,6 +56,11 @@
       text-decoration: none;
       font-weight: bold;
       position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--glow);
     }
 
     nav a::after {
@@ -64,7 +70,7 @@
       height: 2px;
       bottom: -4px;
       left: 0;
-      background-color: var(--accent);
+      background-color: var(--glow);
       transition: width 0.3s ease;
     }
 
@@ -83,6 +89,7 @@
       color: var(--light-brown);
       border-bottom: 2px solid var(--accent);
       padding-bottom: 0.5rem;
+      animation: slideIn 1.5s ease;
     }
 
     ul {
@@ -101,116 +108,16 @@
       color: var(--cream);
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
       transform: scale(1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 0 20px var(--glow);
     }
 
     .project-card h3 {
       margin-top: 0;
-      color: var(--brown);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--brown);
-      color: var(--cream);
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      animation: fadeIn 2s ease;
-    }
-
-    a {
-      color: var(--light-brown);
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateX(-50px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Sakina Opanga</h1>
-    <p>Cybersecurity Analyst | Ethical Hacker | Penetration Tester</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Cybersecurity Analyst and Penetration Tester based in Nairobi. My expertise lies in offensive security, ethical hacking, and secure systems design. I thrive in hands-on labs, Capture the Flag competitions, and vulnerability documentation. My mission is to help organizations strengthen their defenses against evolving cyber threats.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Penetration Testing & Ethical Hacking</li>
-      <li>Network & Wireless Security (Nmap, Aircrack-ng, Wireshark)</li>
-      <li>Web Exploitation (SQL Injection, Path Traversal, XSS)</li>
-      <li>Threat Intelligence & Secure Systems Design</li>
-      <li>Documentation & Reporting (Professional Lab Guides)</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>DVWA Exploitation</h3>
-        <p>Performed SQL Injection, XSS, and brute force attacks on Damn Vulnerable Web App to understand common web vulnerabilities.</p>
-      </div>
-      <div class="project-card">
-        <h3>Wi-Fi Security Lab</h3>
-        <p>Captured WPA handshakes, cracked weak passwords, and documented wireless security flaws using Aircrack-ng and Wireshark.</p>
-      </div>
-      <div class="project-card">
-        <h3>OWASP Juice Shop</h3>
-        <p>Exploited vulnerabilities in a modern web application, including authentication bypass and sensitive data exposure.</p>
-      </div>
-      <div class="project-card">
-        <h3>Packet Tracer Simulation</h3>
-        <p>Designed realistic network topologies with routers, switches, and wireless controllers, simulating secure enterprise environments.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sakinaopanga@example.com">sakinaopanga@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Sakina Opanga | Cybersecurity Portfolio</p>
-  </footer>
-</body>
-</html>
+      color: var
