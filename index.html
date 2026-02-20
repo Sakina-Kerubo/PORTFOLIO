@@ -120,4 +120,121 @@
 
     .project-card h3 {
       margin-top: 0;
-      color: var
+      color: var(--brown);
+    }
+
+    .certificates ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .certificates li {
+      margin: 0.5rem 0;
+    }
+
+    .certificates a {
+      color: var(--light-brown);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .certificates a:hover {
+      color: var(--brown);
+      text-shadow: 0 0 8px var(--glow);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--brown);
+      color: var(--cream);
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 5px var(--glow); }
+      to { text-shadow: 0 0 20px var(--glow), 0 0 30px var(--accent); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sakina Opanga</h1>
+    <p>Cybersecurity Analyst | Ethical Hacker | Penetration Tester</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Cybersecurity Analyst and Penetration Tester based in Nairobi. My expertise lies in offensive security, ethical hacking, and secure systems design. I thrive in hands-on labs, Capture the Flag competitions, and vulnerability documentation. My mission is to help organizations strengthen their defenses against evolving cyber threats.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Penetration Testing & Ethical Hacking</li>
+      <li>Network & Wireless Security (Nmap, Aircrack-ng, Wireshark)</li>
+      <li>Web Exploitation (SQL Injection, Path Traversal, XSS)</li>
+      <li>Threat Intelligence & Secure Systems Design</li>
+      <li>Documentation & Reporting (Professional Lab Guides)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>DVWA Exploitation</h3>
+        <p>Performed SQL Injection, XSS, and brute force attacks on Damn Vulnerable Web App to understand common web vulnerabilities.</p>
+      </div>
+      <div class="project-card">
+        <h3>Wi-Fi Security Lab</h3>
+        <p>Captured WPA handshakes, cracked weak passwords, and documented wireless security flaws using Aircrack-ng and Wireshark.</p>
+      </div>
+      <div class="project-card">
+        <h3>OWASP Juice Shop</h3>
+        <p>Exploited vulnerabilities in a modern web application, including authentication bypass and sensitive data exposure.</p>
+      </div>
+      <div class="project-card">
+        <h3>Packet Tracer Simulation</h3>
+        <p>Designed realistic network topologies with routers, switches, and wireless controllers, simulating secure enterprise environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-UXWZ7OWOOQ.pdf" target="_blank">TryHackMe — Pre Security Path (Completed foundational)</a></li>
+      <li><a href="https://www.credly.com/users/sakina-opanga/badges#credly" target="_blank">Cisco Networking Academy – Networking Basics</a></li>
+      <li><a href="https://www.credly.com/badges/e81344f9-447a-4f90-8c43-15aa24210e9f/public_url" target="_blank">Cisco Networking Academy – Introduction to Cybersecurity</a></li>
