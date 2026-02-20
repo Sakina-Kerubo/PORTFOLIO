@@ -1,11 +1,18 @@
+Here’s the **full HTML code** with your name styled at size 40, and the **Contact section placed directly below Certificates**. I’ve highlighted the placement so you can clearly see that **Contact comes after Certificates**.
+
+---
+
+## 📄 Final Green & Black Techy Portfolio (index.html)
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAKINA KERUBO OPANGA| Cybersecurity Portfolio</title>
+  <title>Sakina Kerubo Opanga | Cybersecurity Portfolio</title>
   <meta name="description" content="Cybersecurity Analyst, Ethical Hacker & Penetration Tester based in Nairobi.">
-  <meta name="author" content="Sakina Opanga" />
+  <meta name="author" content="Sakina Kerubo Opanga" />
 
   <style>
     :root {
@@ -34,7 +41,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 40px; /* Name size set to 40 */
       animation: glowText 2s infinite alternate;
     }
 
@@ -142,6 +149,22 @@
       text-shadow: 0 0 8px var(--green);
     }
 
+    .contact p {
+      margin: 0.5rem 0;
+    }
+
+    .contact a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: var(--accent);
+      text-shadow: 0 0 8px var(--green);
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -181,7 +204,7 @@
 </head>
 <body>
   <header>
-    <h1>Sakina Opanga</h1>
+    <h1>SAKINA KERUBO OPANGA</h1>
     <p>Cybersecurity Analyst | Ethical Hacker | Penetration Tester</p>
     <nav>
       <a href="#about">About</a>
@@ -230,10 +253,9 @@
     </div>
   </section>
 
+  <!-- CERTIFICATES SECTION -->
   <section id="certificates" class="certificates">
     <h2>Certificates</h2>
     <ul>
       <li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-UXWZ7OWOOQ.pdf" target="_blank">TryHackMe — Pre Security Path (Completed foundational)</a></li>
       <li><a href="https://www.credly.com/users/sakina-opanga/badges#credly" target="_blank">Cisco Networking Academy – Networking Basics</a></li>
-      <li><a href="https://www.credly.com/badges/e81344f9-447a-4f90-8c43-15aa24210e9f/public_url" target="_blank">Cisco Networking Academy – Introduction to Cybersecurity</a></li>
-      <li><a href="https://arcx.io/verify-certificate?id=c203a860d5a0d35b191bf8da0843498727146ab4&k=393b5efddf2e4dffbab62ec
