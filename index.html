@@ -9,29 +9,27 @@
 
   <style>
     :root {
-      --cream: #fdf6e3;
-      --brown: #3e2723;
-      --light-brown: #6d4c41;
-      --accent: #a1887f;
-      --glow: #ffcc80;
+      --black: #0d0d0d;
+      --green: #00ff99;
+      --dark-green: #009966;
+      --accent: #33cc99;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Consolas', 'Courier New', monospace;
       margin: 0;
-      background: var(--cream);
-      color: var(--brown);
+      background: var(--black);
+      color: var(--green);
       line-height: 1.6;
-      transition: background 0.5s ease, color 0.5s ease;
     }
 
     header {
-      background: linear-gradient(135deg, var(--brown), var(--light-brown));
+      background: linear-gradient(135deg, var(--black), var(--dark-green));
       padding: 3rem;
       text-align: center;
-      color: var(--cream);
+      color: var(--green);
       animation: fadeInDown 1.5s ease;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      box-shadow: 0 0 20px rgba(0,255,153,0.4);
     }
 
     header h1 {
@@ -51,7 +49,7 @@
     }
 
     nav a {
-      color: var(--cream);
+      color: var(--green);
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
@@ -60,7 +58,7 @@
     }
 
     nav a:hover {
-      color: var(--glow);
+      color: var(--accent);
     }
 
     nav a::after {
@@ -70,7 +68,7 @@
       height: 2px;
       bottom: -4px;
       left: 0;
-      background-color: var(--glow);
+      background-color: var(--accent);
       transition: width 0.3s ease;
     }
 
@@ -86,8 +84,8 @@
     }
 
     h2 {
-      color: var(--light-brown);
-      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+      border-bottom: 2px solid var(--green);
       padding-bottom: 0.5rem;
       animation: slideIn 1.5s ease;
     }
@@ -104,23 +102,23 @@
     }
 
     .project-card {
-      background: var(--accent);
-      color: var(--cream);
+      background: #111;
+      color: var(--green);
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0,255,153,0.3);
       transform: scale(1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project-card:hover {
       transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 0 20px var(--glow);
+      box-shadow: 0 0 20px var(--accent);
     }
 
     .project-card h3 {
       margin-top: 0;
-      color: var(--brown);
+      color: var(--accent);
     }
 
     .certificates ul {
@@ -133,22 +131,22 @@
     }
 
     .certificates a {
-      color: var(--light-brown);
+      color: var(--green);
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
 
     .certificates a:hover {
-      color: var(--brown);
-      text-shadow: 0 0 8px var(--glow);
+      color: var(--accent);
+      text-shadow: 0 0 8px var(--green);
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: var(--brown);
-      color: var(--cream);
+      background: #111;
+      color: var(--green);
       margin-top: 2rem;
       font-size: 0.9rem;
       animation: fadeIn 2s ease;
@@ -176,8 +174,8 @@
     }
 
     @keyframes glowText {
-      from { text-shadow: 0 0 5px var(--glow); }
-      to { text-shadow: 0 0 20px var(--glow), 0 0 30px var(--accent); }
+      from { text-shadow: 0 0 5px var(--green); }
+      to { text-shadow: 0 0 20px var(--accent), 0 0 30px var(--green); }
     }
   </style>
 </head>
@@ -238,3 +236,4 @@
       <li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-UXWZ7OWOOQ.pdf" target="_blank">TryHackMe — Pre Security Path (Completed foundational)</a></li>
       <li><a href="https://www.credly.com/users/sakina-opanga/badges#credly" target="_blank">Cisco Networking Academy – Networking Basics</a></li>
       <li><a href="https://www.credly.com/badges/e81344f9-447a-4f90-8c43-15aa24210e9f/public_url" target="_blank">Cisco Networking Academy – Introduction to Cybersecurity</a></li>
+      <li><a href="https://arcx.io/verify-certificate?id=c203a860d5a0d35b191bf8da0843498727146ab4&
